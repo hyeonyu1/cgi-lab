@@ -1,0 +1,36 @@
+1.
+print(os.environ)
+
+2.
+print(os.environ["QUERY_STRING"])
+
+3.
+print(os.environ["HTTP_USER_AGENT"])
+
+4.
+In FieldStorage
+s = cgi.FieldStorage()
+
+To get username and password 
+
+s = cgi.FieldStorage()
+username = s.getfirst("username")
+password = s.getfirst("password")
+
+
+5.
+Set-Cookie: {key=value}
+
+Set-Cookie: username= hello
+Set-Cookie: password= world
+
+
+6. Cookie: {key=value}
+
+Cookie: username=hello
+Cookie: password=world
+
+
+7.
+
+Cookies are used to remember things server should remember such as logins, personalized website setting and shopping carts if applicable.
